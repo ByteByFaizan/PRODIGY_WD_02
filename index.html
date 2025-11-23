@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>⏱️ Stopwatch</h1>
+      <div class="small kbd-hints">
+        <kbd>Space</kbd> Start/Pause · <kbd>L</kbd> Lap · <kbd>R</kbd> Reset
+      </div>
+    </header>
+
+    <div class="timer">
+      <div class="left panel">
+        <div class="display" id="display">00:00.000</div>
+        <div class="btn-row">
+          <button id="startBtn" class="primary">Start</button>
+          <button id="lapBtn">Lap</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+        <div class="stats" id="stats"></div>
+        <div class="helpers">
+          High-precision timing using <strong>performance.now()</strong>
+        </div>
+      </div>
+
+      <div class="right panel">
+        <div class="laps-header">
+          <strong>Laps</strong>
+          <div class="lap-counter">
+            <span id="lapsCount">0</span>
+            <span class="small">recorded</span>
+          </div>
+        </div>
+        <div class="laps" id="laps">
+          <div class="empty-state">No laps recorded yet</div>
+        </div>
+        <div class="actions">
+          <button id="exportBtn" title="Export laps to CSV">
+            <span>📥</span> Export CSV
+          </button>
+          <button id="clearLapsBtn" title="Clear all lap times">
+            <span>🗑️</span> Clear
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
