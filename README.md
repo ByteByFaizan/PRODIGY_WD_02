@@ -17,8 +17,8 @@ The app allows users to start, pause, reset the timer, and record lap times to m
 
 ## 🛠️ Technologies Used
 
-- **HTML** – for structuring the stopwatch layout and elements  
-- **CSS** – for styling, layout, and visual design  
-- **JavaScript** – for stopwatch logic, time tracking, and lap functionality  
+- **HTML** – For structuring the stopwatch layout and elements  
+- **CSS** – For styling, layout, and visual design  
+- **JavaScript** – For stopwatch logic, time tracking, and lap functionality  
 
 ---
